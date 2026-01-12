@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PackardStudios | Luxury Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --gold: #d4af37;
+      --gold-soft: rgba(212, 175, 55, 0.6);
+      --white: #f5f5f5;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--gold);
+  letter-spacing: 3px;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  max-width: 600px;
+}
+
+header a {
+  margin-top: 2.5rem;
+  padding: 14px 40px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+section {
+  padding: 6rem 8%;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--gold);
+}
+
+.about {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.price-card {
+  border: 1px solid var(--gold-soft);
+  padding: 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.price-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.2rem;
+  margin: 1rem 0;
+  color: var(--white);
+}
+
+.price-card ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.price-card ul li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery div {
+  background: #111;
+  height: 280px;
+  border: 1px solid var(--gold-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-soft);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.gallery div:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+footer {
+  padding: 3rem 8%;
+  text-align: center;
+  border-top: 1px solid var(--gold-soft);
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer span {
+  color: var(--gold);
+}
+
+@media(max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>PackardStudios</h1>
+  <p>Luxury photography crafted with precision, emotion, and timeless elegance.</p>
+  <a href="#pricing">View Packages</a>
+</header><section>
+  <h2 class="section-title">About</h2>
+  <div class="about">
+    <p>
+      PackardStudios delivers high-end photography designed to capture atmosphere, emotion, and story. From portraits to automotive and lifestyle shoots, every frame is created with intention and refined detail.
+    </p>
+  </div>
+</section><section id="pricing">
+  <h2 class="section-title">Pricing</h2>
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Portrait Session</h3>
+      <div class="price">$250</div>
+      <ul>
+        <li>1 Hour Session</li>
+        <li>10 Edited Photos</li>
+        <li>High Resolution Delivery</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <h3>Automotive</h3>
+      <div class="price">$400</div>
+      <ul>
+        <li>On-Location Shoot</li>
+        <li>15 Edited Photos</li>
+        <li>Cinematic Style</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <h3>Premium Package</h3>
+      <div class="price">$750</div>
+      <ul>
+        <li>2+ Hour Session</li>
+        <li>25+ Edited Photos</li>
+        <li>Priority Editing</li>
+      </ul>
+    </div>
+  </div>
+</section><section>
+  <h2 class="section-title">Portfolio</h2>
+  <div class="gallery">
+    <div>Add Your Photo</div>
+    <div>Add Your Photo</div>
+    <div>Add Your Photo</div>
+    <div>Add Your Photo</div>
+    <div>Add Your Photo</div>
+    <div>Add Your Photo</div>
+  </div>
+</section><footer>
+  <p>&copy; 2026
